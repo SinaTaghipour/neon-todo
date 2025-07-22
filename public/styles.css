@@ -1,0 +1,123 @@
+body {
+  background: linear-gradient(135deg, #0d0d0d 0%, #1a1a2e 100%);
+  font-family: 'Orbitron', sans-serif;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: radial-gradient(#222 1px, transparent 1px);
+  background-size: 30px 30px;
+  overflow-x: hidden;
+}
+body {
+  cursor: url('https://www.rw-designer.com/cursor-extern.php?id=25528'), auto;
+}
+
+.container {
+  background: rgba(15, 15, 30, 0.95);
+  border: 2px solid #0ff;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0 0 15px #0ff, 0 0 30px #f0f;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.heading h1 {
+  font-size: 2rem;
+  color: #f0f;
+  text-shadow: 0 0 5px #0ff, 0 0 10px #f0f;
+  letter-spacing: 2px;
+  margin: 0;
+}
+@keyframes neonFlicker {
+  0%, 100% { text-shadow: 0 0 5px #0ff, 0 0 10px #f0f; }
+  50% { text-shadow: 0 0 2px #0ff, 0 0 4px #f0f; }
+}
+.heading h1 {
+  animation: neonFlicker 2s infinite ease-in-out;
+}
+
+.form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+input {
+  flex: 1;
+  padding: 0.8rem 1rem;
+  border: 2px solid #0ff;
+  border-radius: 6px;
+  background-color: #111;
+  color: #0ff;
+  font-size: 1rem;
+  font-family: 'Orbitron', sans-serif;
+  transition: border 0.3s;
+}
+
+input::placeholder {
+  color: #555;
+}
+
+input:focus {
+  border-color: #f0f;
+  outline: none;
+}
+
+button {
+  background-color: transparent;
+  color: #f0f;
+  border: 2px solid #f0f;
+  border-radius: 6px;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  font-family: 'Orbitron', sans-serif;
+  cursor: pointer;
+  box-shadow: 0 0 8px #f0f;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #f0f;
+  color: black;
+  box-shadow: 0 0 12px #0ff, 0 0 24px #f0f;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #0ff;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #0ff;
+}
+
+.todo-item:hover {
+  background: rgba(240, 0, 255, 0.1);
+  transform: translateX(5px);
+  color: #f0f;
+  box-shadow: 0 0 5px #0ff;
+}
+
+.todo-item:active {
+  transform: scale(0.98);
+  background-color: #0ff;
+  color: #000;
+}
